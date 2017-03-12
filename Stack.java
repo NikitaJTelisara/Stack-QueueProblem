@@ -5,6 +5,9 @@ function min
 public class Stack {
     Node top;
     int min;
+    /*better
+    int min =0;
+    */
     int size =0;
 
     public Node pop() {
@@ -29,6 +32,18 @@ public class Stack {
         top = n;
         size++;
     }
+    /*better for min impl
+    public void push(Node n){
+        if(min > n.data){
+           min = n.data;
+        }
+        if(top!=null){
+            n.next = top;
+        }else{
+            top = n;
+        }
+    }*/
+    
 
     public Node peek() {
         if (top != null) {

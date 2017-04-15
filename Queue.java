@@ -23,9 +23,6 @@ public class Queue {
     }
 
     boolean isEmpty() {
-        if (first == null) {
-            return true;
-        }
-        return false;
+        return (first == null) ;
     }
 }

@@ -63,4 +63,31 @@ public class Stack {
     int getMin(){
         return min;
     }
+    
+    /* better min and sort 
+    public Stack sort(){
+        Stack tempStack = new Stack(this.capacity);
+        Node tempVar = null;
+        while (!this.isEmpty()) {
+            tempVar = this.pop();
+            while (!tempStack.isEmpty() && tempVar.data < tempStack.peek().data) {
+                this.push(tempStack.pop().data);
+            }
+            min = tempVar.data;
+            tempStack.push(tempVar.data);
+        }
+        return tempStack;
+    }
+
+    public int getMin(){
+        Stack s = this;
+        min = s.peek().data;
+        while (!s.isEmpty()) {
+            int d  = s.pop().data;
+            if(min > d){
+                min = d;
+            }
+        }
+        return min;
+    }*/
 }

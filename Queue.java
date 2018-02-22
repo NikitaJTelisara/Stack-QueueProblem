@@ -6,7 +6,7 @@ public class Queue {
         Node n = new Node(d);
         if (first != null) {
             last.next = n;
-            last = last.next;
+            last = n;
         } else {
             first = n;
             last = n;
